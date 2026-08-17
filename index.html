@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tristin Webb — Electrical Engineering & AI/ML</title>
+<meta name="description" content="Portfolio of an Electrical Engineering student at NMSU concentrating in AI, ML, and Data Science.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Pixel starfield background, drawn once by JS and left static (not literal animation-heavy) -->
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav">
+    <a href="#top" class="nav-brand">Tristin_Webb<span class="nav-brand-ext">.exe</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><span class="cursor-arrow">▶</span>About</a></li>
+      <li><a href="#stack"><span class="cursor-arrow">▶</span>Stack</a></li>
+      <li><a href="#projects"><span class="cursor-arrow">▶</span>Projects</a></li>
+      <li><a href="#experience"><span class="cursor-arrow">▶</span>Experience</a></li>
+      <li><a href="#resume"><span class="cursor-arrow">▶</span>Resume</a></li>
+      <li><a href="#contact" class="nav-cta"><span class="cursor-arrow">▶</span>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO — arcade title-screen cabinet with synthwave gradient ===== -->
+  <section class="hero">
+    <div class="cabinet">
+      <div class="marquee">
+        <p class="marquee-eyebrow pixel">&gt; NEW_MEXICO_STATE_UNIVERSITY</p>
+        <h1 class="marquee-title">Tristin Webb<span class="cursor" aria-hidden="true">▌</span></h1>
+        <p class="marquee-sub">Electrical Engineering — AI / ML / Data Science Concentration</p>
+      </div>
+
+      <div class="cabinet-body">
+        <div class="hero-copy">
+          <p class="hero-sub" id="typewriterTarget"></p>
+
+          <div class="menu">
+            <a href="#projects" class="menu-item active"><span class="cursor-arrow">▶</span>VIEW PROJECTS</a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener" class="menu-item"><span class="cursor-arrow ghost">▶</span>DOWNLOAD RÉSUMÉ</a>
+            <a href="#contact" class="menu-item"><span class="cursor-arrow ghost">▶</span>CONTACT</a>
+          </div>
+        </div>
+
+        <!-- Character sheet: your year/major/focus/minor as game stats -->
+        <div class="stat-sheet">
+          <p class="stat-sheet-title pixel">PLAYER STATUS</p>
+          <div class="stat-row">
+            <span class="stat-label mono">LEVEL</span>
+            <span class="stat-value">03 <span class="stat-sub">(3rd Year)</span></span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label mono">CLASS</span>
+            <span class="stat-value">Electrical Engineer</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label mono">SPEC</span>
+            <span class="stat-value">AI · ML · Data Science</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label mono">SUBCLASS</span>
+            <span class="stat-value">Comp. Eng. &amp; SWE</span>
+          </div>
+          <div class="stat-bar-row">
+            <span class="stat-label mono">XP</span>
+            <div class="stat-bar"><div class="stat-bar-fill"></div></div>
+            <span class="stat-bar-pct mono">62%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="section-num pixel">01</span>
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a third-year Electrical Engineering student at New Mexico State University, concentrating in
+        Artificial Intelligence, Machine Learning, and Data Science, with a minor in Computer Engineering
+        and Software Development. I like working on problems that live between hardware and software —
+        where a physical signal gets measured, digitized, and turned into something a model can learn from.
+      </p>
+      <p class="about-text">
+        <!-- Placeholder — replace with your own background/interests. -->
+        Outside of coursework, I'm interested in [embedded systems / robotics / power systems / whatever
+        fits you]. This site is a running log of the projects, coursework, and experience that make up
+        that path.
+      </p>
+      <ul class="about-facts mono">
+        <li><span>Location</span>Las Cruces, NM</li>
+        <li><span>University</span>New Mexico State University</li>
+        <li><span>Program</span>B.S. Electrical Engineering</li>
+        <li><span>Expected Grad</span>Spring 2027</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== STACK / SKILLS ===== -->
+  <section class="section" id="stack">
+    <div class="section-head">
+      <span class="section-num pixel">02</span>
+      <h2 class="section-title">Stack</h2>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3 class="stack-group-title pixel">LANGUAGES</h3>
+        <div class="chip-row">
+          <span class="chip cyan">Python</span>
+          <span class="chip">C / C++</span>
+          <span class="chip">MATLAB</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">VHDL / Verilog</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3 class="stack-group-title pixel">AI / ML / DATA</h3>
+        <div class="chip-row">
+          <span class="chip magenta">PyTorch</span>
+          <span class="chip">scikit-learn</span>
+          <span class="chip">NumPy / Pandas</span>
+          <span class="chip">Signal Processing</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3 class="stack-group-title pixel">HARDWARE / EE</h3>
+        <div class="chip-row">
+          <span class="chip gold">Circuit Design</span>
+          <span class="chip">PCB Layout</span>
+          <span class="chip">Microcontrollers</span>
+          <span class="chip">Oscilloscope / DAQ</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3 class="stack-group-title pixel">TOOLS</h3>
+        <div class="chip-row">
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Altium / KiCad</span>
+          <span class="chip">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS — file-select cards ===== -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <span class="section-num pixel">03</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <p class="section-note mono">// placeholders below — swap in your real projects, images, and links</p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-index pixel">FILE_01</div>
+        <h3 class="project-title">Project Name One</h3>
+        <p class="project-desc">One or two sentences on what this project does and what problem it solves. Mention the core technical challenge.</p>
+        <div class="chip-row small">
+          <span class="chip">Python</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Microcontroller</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">▶ RUN_CODE</a>
+          <a href="#" class="text-link">▶ WRITE_UP</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-index pixel">FILE_02</div>
+        <h3 class="project-title">Project Name Two</h3>
+        <p class="project-desc">One or two sentences on what this project does and what problem it solves. Mention the core technical challenge.</p>
+        <div class="chip-row small">
+          <span class="chip">C++</span>
+          <span class="chip">Signal Processing</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">▶ RUN_CODE</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-index pixel">FILE_03</div>
+        <h3 class="project-title">Project Name Three</h3>
+        <p class="project-desc">One or two sentences on what this project does and what problem it solves. Mention the core technical challenge.</p>
+        <div class="chip-row small">
+          <span class="chip">MATLAB</span>
+          <span class="chip">Data Science</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">▶ RUN_CODE</a>
+          <a href="#" class="text-link">▶ DEMO</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-index pixel">FILE_04</div>
+        <h3 class="project-title">Project Name Four</h3>
+        <p class="project-desc">One or two sentences on what this project does and what problem it solves. Mention the core technical challenge.</p>
+        <div class="chip-row small">
+          <span class="chip">KiCad</span>
+          <span class="chip">Embedded C</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">▶ RUN_CODE</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE — quest log ===== -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="section-num pixel">04</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <p class="section-note mono">// placeholders below — swap in real roles, orgs, and dates</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date pixel">2025—PRESENT</div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Role Title</h3>
+          <p class="timeline-org">Organization / Lab Name</p>
+          <p class="timeline-desc">What you did, in concrete terms. One or two lines is enough — lead with impact or scope.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date pixel">2024—2025</div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Role Title</h3>
+          <p class="timeline-org">Organization / Club Name</p>
+          <p class="timeline-desc">What you did, in concrete terms. One or two lines is enough — lead with impact or scope.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date pixel">2023—2024</div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Role Title</h3>
+          <p class="timeline-org">Organization Name</p>
+          <p class="timeline-desc">What you did, in concrete terms. One or two lines is enough — lead with impact or scope.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="section" id="resume">
+    <div class="section-head">
+      <span class="section-num pixel">05</span>
+      <h2 class="section-title">Résumé</h2>
+    </div>
+    <div class="resume-panel">
+      <div class="resume-info">
+        <p class="about-text">Full résumé available as a PDF — view it inline or download a copy.</p>
+        <a href="assets/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+      <div class="resume-embed">
+        <embed src="assets/resume.pdf" type="application/pdf" class="resume-frame" />
+        <p class="resume-fallback mono">Preview unavailable? <a href="assets/resume.pdf" target="_blank" rel="noopener">Open resume.pdf directly →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-contact" id="contact">
+    <div class="section-head">
+      <span class="section-num pixel">06</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <p class="about-text">Open to internships, research opportunities, and collaboration. Reach out directly, or through any of the channels below.</p>
+        <ul class="contact-list mono">
+          <li><a href="mailto:your.email@nmsu.edu">your.email@nmsu.edu →</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername →</a></li>
+          <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername →</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name" class="mono">NAME</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email" class="mono">EMAIL</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message" class="mono">MESSAGE</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note mono" id="formNote">// opens your email client with this message pre-filled</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="mono">© <span id="year"></span> Your Name — built with HTML, CSS &amp; JS, deployed on GitHub Pages.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
